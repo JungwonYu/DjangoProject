@@ -8,5 +8,5 @@ class Profile(models.Model):
 
     image = models.ImageField(upload_to='profile/', null=True)
     nickname = models.CharField(max_length=20, unique=True) #unique=True면 유일한 닉네임을 가지도록 설정
-    message = models.CharField(max_length=100, null=Ture)
+    message = models.CharField(max_length=100, null=True)
 
